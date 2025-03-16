@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+.home{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-rows: 15% 85%;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.banner .logo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+.content .left-col, .right-col {
+    background-color: #303030;
+}
+
+.content .mid-col{
+    background-color: #1c1b1b;
+}
