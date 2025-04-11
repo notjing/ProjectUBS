@@ -2,6 +2,21 @@
     box-sizing: border-box;
 }
 
+.league-spartan {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.vertical-line {
+    width: 0px; 
+    border-left: 3px solid #868686; 
+    height: 100%; 
+}
+
+  
+
 .home{
     display: grid;
     height: 100vh;
@@ -20,8 +35,15 @@
 .banner .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     margin: auto;
+}
+
+.banner .logo img {
+    object-fit: cover;
+    height: auto;
+    max-width: 100%;
 }
 
 .content{
@@ -35,4 +57,31 @@
 
 .content .mid-col{
     background-color: #1c1b1b;
+    
+}
+
+.content .mid-col 
+
+
+  .main-body{
+    display:flex;
+    width: 100%;
+    height: calc(100% - 44px);
+  }
+
+  .articles{
+    width: 70%;
+    height: 100%;
+    
+  }
+
+  .news{
+    width: 30%;
+    height:100%;
+  }
+
+.nav-button{
+  margin-top: 2;
+  margin-bottom: 2;
+  display: block;
 }
