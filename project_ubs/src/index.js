@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import logo from './logo.jpg';
+
 import './index.css';
 import Home from './Home';
 import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Podcast from './Podcast';
 import Newspaper from './Newspaper';
 import Clubs from './Clubs';
-import { createTheme } from '@mui/material';
+import { createTheme, Typography } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
 
 const router = createBrowserRouter([
@@ -17,7 +19,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/podcast',
-    element: <Podcast/>
+    element: <Podcast />
   },
   {
     path: '/newspaper',
@@ -39,10 +41,25 @@ const theme = createTheme({
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ThemeProvider   theme={theme}>
-    <RouterProvider router={router}>
-    </RouterProvider>
-  </ThemeProvider>
+  <ThemeProvider theme={theme}>
+
+    <div className="home">
+      <div className="banner">
+        <div className="logo league-spartan">
+          <img src={logo} alt="Logo"></img>
+          <Typography variant="h3"> MGCIubs</Typography>
+        </div>
+      </div>
+      <div className="content">
+        <div className="left-col"></div>
+        <div className="mid-col">
+          <RouterProvider router={router}>
+          </RouterProvider>
+        </div>
+        <div className="right-col"></div>
+      </div>
+    </div>
+  </ThemeProvider >
 );
 
 // If you want to start measuring performance in your app, pass a function
