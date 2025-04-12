@@ -9,19 +9,12 @@
     font-style: normal;
 }
 
-.vertical-line {
-    width: 0px; 
-    border-left: 3px solid #868686; 
-    height: 100%; 
-}
-
   
 
 .home{
     display: grid;
     height: 100vh;
     width: 100%;
-    grid-template-rows: 15% 85%;
 }
 
 .banner {
@@ -49,6 +42,7 @@
 .content{
     display: grid;
     grid-template-columns: 15% 70% 15%;
+    
 }
 
 .content .left-col, .right-col {
@@ -60,28 +54,16 @@
     
 }
 
-.content .mid-col 
+.main-body{
+  display:flex;
+  height: (100% - 44px);
+}
 
+.articles{
+  width: 70%;
+  
+}
 
-  .main-body{
-    display:flex;
-    width: 100%;
-    height: calc(100% - 44px);
-  }
-
-  .articles{
-    width: 70%;
-    height: 100%;
-    
-  }
-
-  .news{
-    width: 30%;
-    height:100%;
-  }
-
-.nav-button{
-  margin-top: 2;
-  margin-bottom: 2;
-  display: block;
+.news{
+  width: 30%;
 }

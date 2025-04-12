@@ -7,6 +7,8 @@ import {createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Podcast from './Podcast';
 import Newspaper from './Newspaper';
 import Clubs from './Clubs';
+import { createTheme } from '@mui/material';
+import { ThemeProvider } from '@emotion/react';
 
 const router = createBrowserRouter([
   {
@@ -27,12 +29,20 @@ const router = createBrowserRouter([
   }
 ]);
 
+
+const theme = createTheme({
+  typography: {
+    fontFamily: "League Spartan, sans-serif",
+  },
+});
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <ThemeProvider   theme={theme}>
     <RouterProvider router={router}>
     </RouterProvider>
-  </React.StrictMode>
+  </ThemeProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
