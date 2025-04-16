@@ -6,11 +6,8 @@ import {Box, Button, Container, createTheme, IconButton, Toolbar, Typography, St
 import Divider from '@mui/material/Divider';
 import Navbar from './Components/Navbar';
 
-
 function Home() {
   const pages = ['Home', 'Podcast', 'Newspaper', 'Clubs'];
-
-
   const { palette } = createTheme();
   const { augmentColor } = palette;
   const createColor = (mainColor) => augmentColor({ color: { main: mainColor } });
@@ -22,8 +19,6 @@ function Home() {
       fontFamily: "League Spartan"
     }
   });
-
-
 
   return (
     <div className="home">
