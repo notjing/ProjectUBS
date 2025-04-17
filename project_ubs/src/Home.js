@@ -41,7 +41,10 @@ function Home() {
           <Card imgSrc={"https://picsum.photos/300/200"} title = {"Card Title"} 
           description={"DetailsDetailsDetailsDetails DetailsDetailsDetails"} 
           link = {"articlePageLink"} buttonText={"Read Article"}/>
-       
+
+          <Card imgSrc={"https://picsum.photos/300/200"} title = {"Card Title"} 
+          description={"DetailsDetailsDetailsDetails DetailsDetailsDetails"} 
+          link = {"articlePageLink"} buttonText={"Read Article"}/>
           
           <Grid container spacing={2} height={"100vh"}>
               <Grid size={8}>
