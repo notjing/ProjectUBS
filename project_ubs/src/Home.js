@@ -5,12 +5,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import {Box, Button, Container, createTheme, IconButton, Toolbar, Typography, Stack, Grid } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import Navbar from './Components/Navbar';
-
+import Article from './Components/Card.jsx'
 
 function Home() {
   const pages = ['Home', 'Podcast', 'Newspaper', 'Clubs'];
-
-
   const { palette } = createTheme();
   const { augmentColor } = palette;
   const createColor = (mainColor) => augmentColor({ color: { main: mainColor } });
@@ -23,22 +21,25 @@ function Home() {
     }
   });
 
-
-
   return (
     <div className="home">
+      
       <div className="banner">
         <div className="logo league-spartan">
           <img src={logo} alt="Logo"></img>
           <h1> MGCIubs</h1>
         </div>
       </div>
+      
       <div className="content">
+        
         <div className="left-col"></div>
         <div className="mid-col">
             
           <Navbar></Navbar>
-          
+      
+          <Article/>
+  
           <Grid container spacing={2} height={"100vh"}>
               <Grid size={8}>
               </Grid>
@@ -50,11 +51,13 @@ function Home() {
               </Grid>
           </Grid>
 
-          
         </div>
         <div className="right-col"></div>
-      </div>
-    </div>
+
+      </div>  
+
+    </div>   
+   
   );
 }
 
