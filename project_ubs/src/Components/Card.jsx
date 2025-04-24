@@ -20,7 +20,7 @@ export default function Article({
   title = "Article Title",
   subheader = "Publication Date",
   avatarLetter = "B",
-  avatarColor = "#f44336", // red color as default
+  avatarColor = "#f44336", // default red pfp (working on json)
   imageSrc = "/static/images/cards/default.jpg",
   imageAlt = "Article image",
   description = "Article description goes here.",
@@ -106,7 +106,7 @@ export default function Article({
           />
         )}
         
-        {/* Overlay with description and button that appears on hover */}
+        {/* Overlay with hover */}
         <Box
           sx={{
             position: 'absolute',
