@@ -39,8 +39,7 @@ function Home() {
           <Navbar></Navbar>
       
           <Article/>
-
-          
+  
           <Grid container spacing={2} height={"100vh"}>
               <Grid size={8}>
               </Grid>
@@ -52,19 +51,12 @@ function Home() {
               </Grid>
           </Grid>
 
-          
-
         </div>
         <div className="right-col"></div>
-        
 
-      </div>
-      
-      
+      </div>  
 
-    </div>
-    
-    
+    </div>   
    
   );
 }
