@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+.padding-top{
+    padding-top: 5vh;
+}
+
+.padding-left{
+  padding-left: 7vh;
+}
+
 .main-body{
   display:flex;
   height: (100% - 44px);

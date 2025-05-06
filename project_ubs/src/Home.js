@@ -8,24 +8,25 @@ import Article from './Components/Card.jsx'
 
 function Home() {
   const pages = ['Home', 'Podcast', 'Newspaper', 'Clubs'];
-  const { palette } = createTheme();
-  const { augmentColor } = palette;
-  const createColor = (mainColor) => augmentColor({ color: { main: mainColor } });
-  const theme = createTheme({
-    palette: {
-      white: createColor('#FFFFFF'),
-    },
-    typography: {
-      fontFamily: "League Spartan"
-    }
-  });
+
+  const articles = [<Article></Article>, <Article></Article>, <Article></Article>, <Article></Article>];
 
   return (
 
     <div>
       <Navbar></Navbar>
+      
       <Grid container spacing={2} height={"100vh"}>
-        <Grid size={8}>
+        <Grid size={8} className="padding-top padding-left">
+
+          <Grid container spacing={4}>
+            {articles.map((article, index) => (
+              <Grid item size={6} key={index}>
+                {article}
+              </Grid>
+            ))}
+          </Grid>
+          
         </Grid>
         <Grid size={1}>
           <Divider sx={{ mt: "5vh", bgcolor: "white", width: "2px", height: "90%" }} orientation="vertical" />
