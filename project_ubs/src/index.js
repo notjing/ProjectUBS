@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import logo from './logo.jpg';
-
+import "./styles.css"
 import './index.css';
 import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Podcast from './Podcast';
-import Newspaper from './Newspaper';
+import Newspaper from './Newspaper.tsx';
 import Clubs from './Clubs';
 import { createTheme, Typography } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
