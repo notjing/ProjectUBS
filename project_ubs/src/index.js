@@ -7,7 +7,7 @@ import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Podcast from './Podcast';
-import Newspaper from './Newspaper.tsx';
+import Newspaper from './Newspaper.js';
 import Clubs from './Clubs';
 import { createTheme, Typography } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';

@@ -15,20 +15,9 @@ import { Link } from 'react-router-dom'; // Assuming you're using React Router
 import Box from '@mui/material/Box';
 
 export default function Article({
-  id = "1",
-  author = "Author Name",
-  title = "Article Title",
-  subheader = "Publication Date",
-  avatarLetter = "B",
-  avatarColor = "#f44336", // default red pfp (working on json)
-  imageSrc = "/static/images/cards/default.jpg",
-  imageAlt = "Article image",
-  description = "Article description goes here.",
-  articleUrl = "/articles/",
-  onFavoriteClick = null,
-  onShareClick = null,
-  showSettings = true,
-  readMoreLabel = "Read More"
+ id, author, title, subheader, avatarLetter, avatarColor, imageSrc, imageAlt,
+  description, articleUrl, onFavoriteClick, onShareClick, showSettings,readMoreLabel
+
 }) {
   const [favorited, setFavorited] = React.useState(false);
   const [isHovered, setIsHovered] = React.useState(false);
